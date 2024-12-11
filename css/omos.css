@@ -1,0 +1,21 @@
+/********Reset**********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*******/
+
+/* Mobilversion */
+
+/* Computerversion */
+@media (min-width: 800px) {
+}
