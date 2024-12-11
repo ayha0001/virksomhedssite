@@ -5,6 +5,12 @@
   box-shadow: 0px 10px 12px #878787;
 }
 
+.prisboks a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f56f10;
+}
+
 @media (min-width: 800px) {
   .grid_1-1-1 {
     display: grid;
@@ -21,6 +27,15 @@
 
   .prisboks {
     padding: 10%;
+  }
+
+  .prisboks h2,
+  .prisboks h3 {
+    padding-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 15px;
   }
 }
 
