@@ -1,15 +1,11 @@
-body {
-	display: flex;
-	padding: 20px;
-	align-items: flex-start;
-	gap: 20px;
-}
-
 header {
 	display: flex;
 	height: 50px;
-	align-items: flex-start;
+	width: calc(100vw - 42px);
+	margin: 20px auto;
+	align-items: center;
 	flex: 1 0 0;
+	align-items: flex-start;
 }
 
 .logo {
