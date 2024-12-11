@@ -13,6 +13,39 @@ video {
 }
 /*************** Menu ****************/
 
+/* Font indstillinger*/
+h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  color: #ff9050;
+  font-size: 3.5rem;
+  padding-bottom: 25px;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  color: #262626;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-family: Raleway;
+  font-weight: 350;
+  font-size: 1rem;
+  color: #262626;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  color: #262626;
+}
+
+ul {
+  font-family: Roboto, sans-serif;
+  color: #262626;
+  line-height: 180%;
+}
+
 :root {
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
