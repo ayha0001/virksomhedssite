@@ -2,19 +2,25 @@
   padding: 20px;
   background-color: #eeee;
   opacity: 80%;
+  box-shadow: 0px 10px 12px #878787;
 }
 
 @media (min-width: 800px) {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 30px;
   }
 
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .prisboks {
+    padding: 10%;
   }
 }
 

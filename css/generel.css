@@ -19,7 +19,7 @@ h1 {
   font-weight: 800;
   color: #ff9050;
   font-size: 3.5rem;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 
 h2 {
@@ -31,17 +31,19 @@ h2 {
 h3 {
   font-family: Raleway;
   font-weight: 350;
-  font-size: 1rem;
+  font-size: 1.17rem;
   color: #262626;
 }
 
 p {
   font-family: Roboto, sans-serif;
+  font-size: 1.1rem;
   color: #262626;
 }
 
 ul {
   font-family: Roboto, sans-serif;
+  font-size: 1.1rem;
   color: #262626;
   line-height: 180%;
 }
