@@ -1,0 +1,145 @@
+body {
+	display: flex;
+	padding: 20px;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+header {
+	display: flex;
+	height: 50px;
+	align-items: flex-start;
+	flex: 1 0 0;
+}
+
+.logo {
+	align-items: stretch;
+	height: 100%;
+	max-width: 130px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+img {
+	align-items: stretch;
+	height: 100%;
+	max-width: 130px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.tekst {
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	flex: 1 1 0;
+	align-self: stretch;
+	background-color: rgba(238, 238, 238, 0.93);
+}
+
+nav {
+	height: 100%;
+	color: #fff;
+	font-family: Inter;
+	font-size: clamp(1rem, 1.7vw, 2rem);
+	font-style: normal;
+	font-weight: 700;
+}
+
+.navydre {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	height: 100%;
+}
+
+.navindre {
+	display: flex;
+	padding-left: 5px;
+	align-items: center;
+	gap: 5px;
+	align-self: stretch;
+	height: 100%;
+}
+
+.navknap {
+	display: flex;
+	padding: 10px 15px;
+	align-items: center;
+	gap: 10px;
+	align-self: stretch;
+	background: rgba(255, 144, 80, 0.93);
+}
+
+.navknap:last-child {
+	border-radius: 0px 20px 20px 0px;
+}
+
+.navcta {
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	align-self: stretch;
+	border-radius: 20px;
+	background: #f74545;
+}
+
+.navburger {
+	display: none;
+}
+
+/* header */
+
+.nav-burger.active {
+	display: flex; /* Vis menuen når den er aktiv */
+}
+
+/* Åbent burger-ikon */
+.burger.open span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+	transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 720px) {
+	.navydre {
+		display: none;
+	}
+	.tekst {
+		display: none;
+	}
+	.burgermenu {
+		display: flex;
+		height: 100%;
+		padding: 0px 30px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		flex: 1 1 0;
+		background: rgba(255, 144, 80, 0.93);
+		border-radius: 0px 20px 20px 0px;
+	}
+	.burger {
+		display: flex;
+		cursor: pointer;
+		flex-direction: column;
+		gap: 6px;
+	}
+	.burger span {
+		display: block;
+		width: 40px;
+		height: 4px;
+		background-color: white;
+	}
+	nav {
+		width: 100%;
+	}
+}
