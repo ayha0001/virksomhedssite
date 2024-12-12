@@ -20,6 +20,8 @@ html {
 	--secondary: #262626;
 	--tertiary: #eeee;
 	--quinary: #e96100;
+	--black: rgb(0, 0, 0);
+	--white: rgb(255, 255, 255);
 }
 
 h1 {
@@ -55,12 +57,6 @@ ul {
 	font-size: 1.1rem;
 	color: var(--secondary);
 	line-height: 180%;
-}
-
-:root {
-	--black: rgb(0, 0, 0);
-	--white: rgb(255, 255, 255);
-	--whitetone: #eeee;
 }
 
 body {
