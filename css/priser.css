@@ -1,6 +1,6 @@
 .prisboks {
   padding: 20px;
-  background-color: #eeee;
+  background-color: var(--tertiary);
   opacity: 80%;
   box-shadow: 0px 10px 12px #878787;
 }
@@ -8,25 +8,48 @@
 .prisboks a {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f56f10;
+  color: var(--quinary);
+}
+
+.prisboks a:hover {
+  color: var(--primary);
+}
+
+.bookkontakt {
+  padding: 35px;
+  background-color: var(--tertiary);
+  opacity: 80%;
+  box-shadow: 0px 10px 12px #878787;
+}
+
+.bookkontakt a {
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: var(--quinary);
+  color: white;
+  border-radius: 10px;
 }
 
 @media (min-width: 800px) {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 35px;
     margin-bottom: 30px;
   }
 
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 35px;
   }
 
   .prisboks {
-    padding: 10%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .prisboks h2,
@@ -36,6 +59,10 @@
 
   ul {
     padding-left: 15px;
+  }
+
+  .bookkontakt {
+    margin: 0 0 2.5rem;
   }
 }
 
