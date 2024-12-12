@@ -105,6 +105,10 @@ nav {
 	transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.burgercta {
+	display: none;
+}
+
 @media (max-width: 720px) {
 	.navydre {
 		display: none;
