@@ -72,13 +72,13 @@ a {
 }
 
 main {
-	margin: 40px 20px;
+	margin: 100px 20px 40px 20px;
 
 	@media (min-width: 600px) {
-		margin: 50px 30px;
+		margin: 100px 30px;
 	}
 	@media (min-width: 1070px) {
-		margin: 50px auto;
+		margin: 100px auto;
 		max-width: 1000px;
 	}
 }

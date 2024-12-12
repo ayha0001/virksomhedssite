@@ -1,11 +1,19 @@
+address {
+	font-style: normal;
+}
+
 header {
 	display: flex;
 	height: 50px;
-	width: calc(100vw - 42px);
-	margin: 20px auto;
+	width: calc(100% - 68px);
+	margin: 10px 30px;
 	align-items: center;
 	flex: 1 0 0;
 	align-items: flex-start;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
 }
 
 .logo {
@@ -64,7 +72,13 @@ nav {
 	align-items: center;
 	gap: 10px;
 	align-self: stretch;
-	background: rgba(255, 144, 80, 0.93);
+	background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
+}
+
+.navknap:hover,
+.navcta:hover {
+	background-color: var(--secondary);
+	transition: background 0.3s ease;
 }
 
 .navknap:last-child {
@@ -79,7 +93,7 @@ nav {
 	gap: 10px;
 	align-self: stretch;
 	border-radius: 20px;
-	background: #f74545;
+	background: linear-gradient(208deg, rgba(255, 130, 88, 1) 0%, rgba(233, 36, 0, 1) 95%);
 }
 
 .navburger {
@@ -124,7 +138,7 @@ nav {
 		justify-content: center;
 		flex: 1 1 0;
 		align-items: flex-end;
-		background: rgba(255, 144, 80, 0.93);
+		background: var(--primary);
 		border-radius: 0px 20px 20px 0px;
 	}
 	.burgerydre {
@@ -194,7 +208,6 @@ footer {
 	display: flex;
 	padding: 20px;
 	flex-direction: column;
-	align-items: flex-start;
 	gap: 10px;
 	align-self: stretch;
 	border-radius: 10px;
@@ -202,9 +215,8 @@ footer {
 	backdrop-filter: blur(7.5px);
 }
 
-.kontaktos1 {
-	display: flex;
-	flex-direction: column;
+.kontaktos {
+	justify-content: space-between;
 }
 
 .åbningstider1 {
@@ -214,6 +226,8 @@ footer {
 }
 .some {
 	align-items: flex-end;
+	align-self: flex-start;
+	flex: 1 1 0;
 	display: flex;
 	gap: 10px;
 }
