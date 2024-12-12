@@ -16,9 +16,10 @@ video {
 /* Font indstillinger*/
 
 html {
-  --primary: #ff9050;
+  --primary: #ff9d58;
   --secondary: #262626;
   --tertiary: #eeee;
+  --quinary: #e96100;
 }
 
 h1 {
