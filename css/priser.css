@@ -1,6 +1,6 @@
 .prisboks {
   padding: 20px;
-  background-color: #eeee;
+  color: var(--tertiary);
   opacity: 80%;
   box-shadow: 0px 10px 12px #878787;
 }
@@ -15,18 +15,22 @@
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 35px;
     margin-bottom: 30px;
   }
 
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 35px;
   }
 
   .prisboks {
-    padding: 10%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .prisboks h2,

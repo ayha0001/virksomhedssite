@@ -14,17 +14,24 @@ video {
 /*************** Menu ****************/
 
 /* Font indstillinger*/
+
+html {
+  --primary: #ff9050;
+  --secondary: #262626;
+  --tertiary: #eeee;
+}
+
 h1 {
   font-family: Raleway, sans-serif;
   font-weight: 800;
-  color: #ff9050;
+  color: var(--primary);
   font-size: 3.5rem;
   padding-bottom: 35px;
 }
 
 h2 {
   font-family: Raleway, sans-serif;
-  color: #262626;
+  color: var(--secondary);
   font-size: 1.7rem;
 }
 
@@ -32,20 +39,20 @@ h3 {
   font-family: Raleway;
   font-weight: 350;
   font-size: 1.17rem;
-  color: #262626;
+  color: var(--secondary);
 }
 
 p {
   font-family: Roboto, sans-serif;
   font-size: 1.1rem;
-  color: #262626;
+  color: var(--secondary);
   line-height: 180%;
 }
 
 ul {
   font-family: Roboto, sans-serif;
   font-size: 1.1rem;
-  color: #262626;
+  color: var(--secondary);
   line-height: 180%;
 }
 
@@ -53,16 +60,6 @@ ul {
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
   --whitetone: #eeee;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 body {
