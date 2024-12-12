@@ -1,7 +1,3 @@
-div {
-	display: flex;
-	gap: 10px;
-}
 header {
 	display: flex;
 	height: 50px;
@@ -19,7 +15,7 @@ header {
 	border-radius: 20px 0px 0px 20px;
 }
 
-img {
+.logo img {
 	align-items: stretch;
 	height: 100%;
 	max-width: 130px;
@@ -208,6 +204,8 @@ footer {
 }
 .some {
 	align-items: flex-end;
+	display: flex;
+	gap: 10px;
 }
 
 @media (min-width: 800px) {
