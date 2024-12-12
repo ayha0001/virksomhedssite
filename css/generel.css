@@ -67,7 +67,7 @@ a {
 	text-decoration: none;
 	font-family: Roboto, sans-serif;
 	font-size: 1.1rem;
-	color: #262626;
+	color: var(--white);
 }
 
 main {
