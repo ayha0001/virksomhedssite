@@ -30,7 +30,7 @@ header {
 	width: 100%;
 	flex: 1 1 0;
 	align-self: stretch;
-	background-color: rgba(238, 238, 238, 0.93);
+	background-color: var(--tertiary);
 }
 
 nav {
@@ -168,6 +168,7 @@ footer {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 20px;
+	position: relative;
 }
 .bestil {
 	display: flex;
@@ -197,8 +198,13 @@ footer {
 	gap: 10px;
 	align-self: stretch;
 	border-radius: 10px;
-	background: rgba(238, 238, 238, 0.8);
+	background: var(--tertiaryopacity);
 	backdrop-filter: blur(7.5px);
+}
+
+.kontaktos1 {
+	display: flex;
+	flex-direction: column;
 }
 
 .åbningstider1 {
@@ -210,6 +216,15 @@ footer {
 	align-items: flex-end;
 	display: flex;
 	gap: 10px;
+}
+
+#linjefooter1 {
+	display: none;
+}
+#linjefooter2 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
 }
 
 @media (min-width: 800px) {
@@ -232,5 +247,16 @@ footer {
 	}
 	.åbningstider {
 		grid-column: 3/4;
+	}
+
+	#linjefooter1 {
+		display: block;
+		position: absolute;
+		bottom: 87px;
+		right: 0;
+	}
+
+	#linjefooter2 {
+		display: none;
 	}
 }
