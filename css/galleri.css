@@ -4,11 +4,83 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-img,
-video {
+img video {
   width: 100%;
   height: auto;
   display: block;
 }
 /*************** Menu ****************/
+
+/*************** DEKSTOP ****************/
+@media (min-width: 800px) {
+  .grid_galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px;
+    align-items: center;
+    overflow: hidden;
+  }
+  .img_1 {
+    /* aspect-ratio: 1/1;
+    grid-row: 2;
+    grid-column: 1; */
+    object-fit: cover;
+    align-items: stretch;
+  }
+  .img_2 {
+    grid-column: span 2;
+    /* aspect-ratio: 16/9; */
+    object-fit: cover;
+    align-items: stretch;
+    align-items: center;
+  }
+  .img_3 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /* grid-row: 2;
+    grid-column: 2; */
+    align-items: stretch;
+  }
+  .img_4 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    align-items: stretch;
+  }
+  .img_5 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    align-items: stretch;
+  }
+}
+
+/*************** MOBILE SITE ****************/
+
+@media (max-width: 800px) {
+  .grid_galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .img_1 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .img_2 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  .img_3 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .img_4 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .img_5 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
