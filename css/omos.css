@@ -63,4 +63,7 @@ p {
     opacity: 90%;
     box-shadow: 0px 10px 12px #878787;
   }
+  .omvendt {
+    order: 2;
+  }
 }
