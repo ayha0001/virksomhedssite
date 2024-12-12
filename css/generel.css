@@ -1,125 +1,105 @@
 /*************** Reset *********************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 img,
 video {
-  width: 100%;
-  height: auto;
-  display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 /*************** Menu ****************/
 
 /* Font indstillinger*/
 h1 {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  color: #ff9050;
-  font-size: 3.5rem;
-  padding-bottom: 35px;
+	font-family: Raleway, sans-serif;
+	font-weight: 800;
+	color: #ff9050;
+	font-size: 3.5rem;
+	padding-bottom: 35px;
 }
 
 h2 {
-  font-family: Raleway, sans-serif;
-  color: #262626;
-  font-size: 1.7rem;
+	font-family: Raleway, sans-serif;
+	color: #262626;
+	font-size: 1.7rem;
 }
 
 h3 {
-  font-family: Raleway;
-  font-weight: 350;
-  font-size: 1.17rem;
-  color: #262626;
+	font-family: Raleway;
+	font-weight: 350;
+	font-size: 1.17rem;
+	color: #262626;
 }
 
 p {
-  font-family: Roboto, sans-serif;
-  font-size: 1.1rem;
-  color: #262626;
-  line-height: 180%;
+	font-family: Roboto, sans-serif;
+	font-size: 1.1rem;
+	color: #262626;
+	line-height: 180%;
 }
 
 ul {
-  font-family: Roboto, sans-serif;
-  font-size: 1.1rem;
-  color: #262626;
-  line-height: 180%;
+	font-family: Roboto, sans-serif;
+	font-size: 1.1rem;
+	color: #262626;
+	line-height: 180%;
 }
 
 :root {
-  --black: rgb(0, 0, 0);
-  --white: rgb(255, 255, 255);
-  --whitetone: #eeee;
+	--black: rgb(0, 0, 0);
+	--white: rgb(255, 255, 255);
+	--whitetone: #eeee;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 body {
-  cursor: default;
+	cursor: default;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	font-family: Roboto, sans-serif;
+	font-size: 1.1rem;
+	color: #262626;
 }
 
 main {
-  margin: 40px 20px;
+	margin: 40px 20px;
 
-  @media (min-width: 600px) {
-    margin: 50px 30px;
-  }
-  @media (min-width: 1070px) {
-    margin: 50px auto;
-    max-width: 1000px;
-  }
-}
-
-html {
-  color: var(--test);
-  font-family: "Roboto", serif;
-  line-height: 1.5rem;
+	@media (min-width: 600px) {
+		margin: 50px 30px;
+	}
+	@media (min-width: 1070px) {
+		margin: 50px auto;
+		max-width: 1000px;
+	}
 }
 
 .knap {
-  color: var(--white);
-  border-radius: 13px;
-  background: var(--black);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: background 0.3s ease, color 0.3s ease;
-  padding: 1.25% 2%;
-  margin: 10px 0px 10px 0px;
-  max-width: fit-content;
-  animation-name: knap-a;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  animation-direction: alternate;
+	color: var(--white);
+	border-radius: 13px;
+	background: var(--black);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	transition: background 0.3s ease, color 0.3s ease;
+	padding: 1.25% 2%;
+	margin: 10px 0px 10px 0px;
+	max-width: fit-content;
 }
 
 .knap:hover {
-  background: var(--whitetone);
-  backdrop-filter: blur(4px);
-}
-
-@keyframes knap-a {
-  0% {
-    scale: 90%;
-  }
-
-  100% {
-    scale: 100%;
-  }
+	background: var(--whitetone);
+	backdrop-filter: blur(4px);
 }
