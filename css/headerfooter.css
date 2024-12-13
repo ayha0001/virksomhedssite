@@ -38,7 +38,8 @@ header {
 	width: 100%;
 	flex: 1 1 0;
 	align-self: stretch;
-	background-color: var(--tertiary);
+	background: var(--tertiaryopacity);
+	backdrop-filter: blur(7.5px);
 }
 
 nav {
