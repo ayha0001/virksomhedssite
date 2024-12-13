@@ -1,53 +1,53 @@
 main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  height: 100vh;
-  top: 0;
-  left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	top: 0;
+	left: 0;
 }
 
 .hero > * {
-  grid-column: 1;
-  grid-row: 1;
+	grid-column: 1;
+	grid-row: 1;
 }
 
 #bil {
-  position: absolute;
-  bottom: -100px;
-  right: -300px;
-  height: 300px;
-  width: auto;
-  /* animation-name: bil; */
-  /* animation-duration: 5s;
+	position: absolute;
+	bottom: -100px;
+	right: -300px;
+	height: 300px;
+	width: auto;
+	/* animation-name: bil; */
+	/* animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out; */
-  animation: bil linear;
-  animation-timeline: scroll(root);
+	animation: bil linear;
+	animation-timeline: scroll(root);
 }
 
 @keyframes bil {
-  to {
-    transform: translate(-1800px);
-  }
+	to {
+		transform: translate(-1800px);
+	}
 }
 .galleri {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  :first-child {
-    margin-right: 10px;
-  }
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	:first-child {
+		margin-right: 10px;
+	}
 }
 
 /* @keyframes bil {
@@ -101,18 +101,49 @@ main {
 } */
 
 .boks {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  gap: 10px;
-  align-self: stretch;
-  border-radius: 10px;
-  background: var(--tertiaryopacity);
-  backdrop-filter: blur(7.5px);
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	gap: 10px;
+	align-self: stretch;
+	border-radius: 10px;
+	background: var(--tertiaryopacity);
+	backdrop-filter: blur(7.5px);
+}
+
+.slogan {
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px 30px;
 }
 
 .linje {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.grid_1-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	img {
+		height: 100%;
+		max-height: 300px;
+		object-fit: cover;
+		border-radius: 0px 10px 0px 10px;
+	}
+}
+.indregrid {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+@media (min-width: 800px) {
+	.grid_1-1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
