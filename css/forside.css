@@ -1,6 +1,7 @@
 main {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .hero {
@@ -108,4 +109,10 @@ main {
   border-radius: 10px;
   background: var(--tertiaryopacity);
   backdrop-filter: blur(7.5px);
+}
+
+.linje {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
