@@ -1,100 +1,100 @@
 /*************** Reset *********************/
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img,
 video {
-	width: 100%;
-	height: auto;
-	display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 /*************** Menu ****************/
 
 /* Font indstillinger*/
 
 html {
-	--primary: #ff9d58;
-	--secondary: #262626;
-	--tertiary: #eeee;
-	--tertiaryopacity: rgba(238, 238, 238, 0.8);
-	--quinary: #e96100;
-	--black: rgb(0, 0, 0);
-	--white: rgb(255, 255, 255);
+  --primary: #ff9d58;
+  --secondary: #262626;
+  --tertiary: rgba(238, 238, 238, 0.933);
+  --tertiaryopacity: rgba(238, 238, 238, 0.8);
+  --quinary: #e96100;
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
 }
 
 h1 {
-	font-family: Raleway, sans-serif;
-	font-weight: 800;
-	color: var(--primary);
-	font-size: 3.5rem;
-	padding-bottom: 35px;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 3.5rem;
+  padding-bottom: 35px;
 }
 
 h2 {
-	font-family: Raleway, sans-serif;
-	color: var(--secondary);
-	font-size: 1.7rem;
+  font-family: Raleway, sans-serif;
+  color: var(--secondary);
+  font-size: 1.7rem;
 }
 
 h3 {
-	font-family: Raleway;
-	font-weight: 350;
-	font-size: 1.17rem;
-	color: var(--secondary);
+  font-family: Raleway;
+  font-weight: 350;
+  font-size: 1.17rem;
+  color: var(--secondary);
 }
 
 p {
-	font-family: Roboto, sans-serif;
-	font-size: 1.1rem;
-	color: var(--secondary);
-	line-height: 180%;
+  font-family: Roboto, sans-serif;
+  font-size: 1.1rem;
+  color: var(--secondary);
+  line-height: 180%;
 }
 
 ul {
-	font-family: Roboto, sans-serif;
-	font-size: 1.1rem;
-	color: var(--secondary);
-	line-height: 180%;
+  font-family: Roboto, sans-serif;
+  font-size: 1.1rem;
+  color: var(--secondary);
+  line-height: 180%;
 }
 
 body {
-	cursor: default;
+  cursor: default;
 }
 
 a {
-	text-decoration: none;
-	font-family: Roboto, sans-serif;
-	font-size: 1.1rem;
-	color: var(--white);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 1.1rem;
+  color: var(--white);
 }
 
 main {
-	margin: 100px 20px 40px 20px;
+  margin: 100px 20px 40px 20px;
 
-	@media (min-width: 600px) {
-		margin: 100px 30px;
-	}
-	@media (min-width: 1070px) {
-		margin: 100px auto;
-		max-width: 1000px;
-	}
+  @media (min-width: 600px) {
+    margin: 100px 30px;
+  }
+  @media (min-width: 1070px) {
+    margin: 100px auto;
+    max-width: 1000px;
+  }
 }
 
 .knap {
-	color: var(--white);
-	border-radius: 10px;
-	background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	transition: background 0.3s ease, color 0.3s ease;
-	padding: 10px 15px;
-	margin: 10px 0px 10px 0px;
-	max-width: fit-content;
+  color: var(--white);
+  border-radius: 10px;
+  background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 10px 15px;
+  margin: 10px 0px 10px 0px;
+  max-width: fit-content;
 }
 
 .knap:hover {
-	background: var(--secondary);
-	backdrop-filter: blur(4px);
+  background: var(--secondary);
+  backdrop-filter: blur(4px);
 }
