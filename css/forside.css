@@ -40,6 +40,14 @@ main {
     transform: translate(-1800px);
   }
 }
+.galleri {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  :first-child {
+    margin-right: 10px;
+  }
+}
 
 /* @keyframes bil {
 	0% {
@@ -90,3 +98,14 @@ main {
 	transform: scale(1.1);
 	filter: blur(5px) opacity(50%);
 } */
+
+.boks {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--tertiaryopacity);
+  backdrop-filter: blur(7.5px);
+}

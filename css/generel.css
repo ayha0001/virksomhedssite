@@ -18,7 +18,7 @@ video {
 html {
   --primary: #ff9d58;
   --secondary: #262626;
-  --tertiary: rgba(238, 238, 238, 0.933);
+  --tertiary: #eeee;
   --tertiaryopacity: rgba(238, 238, 238, 0.8);
   --quinary: #e96100;
   --black: rgb(0, 0, 0);
@@ -72,13 +72,13 @@ a {
 }
 
 main {
-  margin: 100px 20px 40px 20px;
+  margin: 100px 20px 70px 20px;
 
   @media (min-width: 600px) {
-    margin: 100px 30px;
+    margin: 100px 50px 70px 50px;
   }
   @media (min-width: 1070px) {
-    margin: 100px auto;
+    margin: 100px auto 70px auto;
     max-width: 1000px;
   }
 }
