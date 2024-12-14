@@ -147,3 +147,11 @@ main {
 		grid-template-columns: 1fr 1fr;
 	}
 }
+
+#kort {
+	display: grid;
+	gap: 10px;
+	iframe {
+		aspect-ratio: 4/2;
+	}
+}
