@@ -30,3 +30,29 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.getElementById("footer-placeholder").innerHTML = data;
 		});
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Hent nødvendige elementer
+	const slider = document.querySelector(".kommentarslide");
+	const prevButton = document.querySelector("#prevBtn");
+	const nextButton = document.querySelector("#nextBtn");
+
+	// Bredden som hver scroll skal flytte (kan justeres afhængigt af designet)
+	const scrollAmount = slider.offsetWidth / 2;
+
+	// Tilføj klik-event til "forrige" knap
+	prevButton.addEventListener("click", () => {
+		slider.scrollBy({
+			left: -scrollAmount, // Scroll til venstre
+			behavior: "smooth", // Gør det pænt og glidende
+		});
+	});
+
+	// Tilføj klik-event til "næste" knap
+	nextButton.addEventListener("click", () => {
+		slider.scrollBy({
+			left: scrollAmount, // Scroll til højre
+			behavior: "smooth",
+		});
+	});
+});
