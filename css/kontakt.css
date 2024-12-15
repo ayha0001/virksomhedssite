@@ -1,0 +1,25 @@
+label,
+input,
+textarea,
+select,
+button {
+	display: block;
+	font-family: Roboto, sans-serif;
+	border-radius: 5px;
+	padding: 7px;
+}
+
+button {
+	justify-self: end;
+}
+
+form {
+	display: grid;
+	gap: 0.7rem;
+	max-width: 500px;
+	margin: auto;
+}
+
+.formfelt {
+	display: grid;
+}
