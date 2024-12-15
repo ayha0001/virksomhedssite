@@ -32,13 +32,12 @@ p {
 .tekstboks {
   background-color: #eeee;
   padding: 20px;
-  margin: 10px;
   opacity: 80%;
   box-shadow: 0px 10px 12px #878787;
+  margin-bottom: 15px;
 }
 
 .om_os_billeder {
-  margin: 10px;
   opacity: 90%;
   box-shadow: 0px 10px 12px #878787;
 }
@@ -53,15 +52,15 @@ p {
   .tekstboks {
     background-color: #eeee;
     padding: 30px;
-    margin: 10px;
     opacity: 80%;
     box-shadow: 0px 10px 12px #878787;
+    margin-bottom: 15px;
   }
 
   .om_os_billeder {
-    margin: 10px;
     opacity: 90%;
     box-shadow: 0px 10px 12px #878787;
+    margin-bottom: 15px;
   }
   .omvendt {
     order: 2;
