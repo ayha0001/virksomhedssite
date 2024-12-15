@@ -1,7 +1,7 @@
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 70px;
 }
 
 .hero {
@@ -28,13 +28,8 @@ main {
 	right: -300px;
 	height: 300px;
 	width: auto;
-	/* animation-name: bil; */
-	/* animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out; */
 	animation: bil linear;
 	animation-timeline: scroll(root);
-	animation-duration: 1; /* Scrollens fulde varighed */
 }
 
 @keyframes bil {
@@ -54,47 +49,52 @@ main {
 	}
 }
 
-/* @keyframes bil {
-	0% {
-		right: -300px;
+@media (max-width: 800px) {
+	#bil {
+		animation: bil 5s linear infinite;
 	}
-	100% {
-		right: 100%;
+	@keyframes bil {
+		0% {
+			right: -600px;
+		}
+		100% {
+			right: 100%;
+		}
+		0% {
+			transform: translate(1px, 1px) rotate(0deg);
+		}
+		10% {
+			transform: translate(-1px, -2px) rotate(-1deg);
+		}
+		20% {
+			transform: translate(-3px, 0px) rotate(1deg);
+		}
+		30% {
+			transform: translate(3px, 2px) rotate(0deg);
+		}
+		40% {
+			transform: translate(1px, -1px) rotate(1deg);
+		}
+		50% {
+			transform: translate(-1px, 2px) rotate(-1deg);
+		}
+		60% {
+			transform: translate(-3px, 1px) rotate(0deg);
+		}
+		70% {
+			transform: translate(3px, 1px) rotate(-1deg);
+		}
+		80% {
+			transform: translate(-1px, -1px) rotate(1deg);
+		}
+		90% {
+			transform: translate(1px, 2px) rotate(0deg);
+		}
+		100% {
+			transform: translate(1px, -2px) rotate(-1deg);
+		}
 	}
-	0% {
-		transform: translate(1px, 1px) rotate(0deg);
-	}
-	10% {
-		transform: translate(-1px, -2px) rotate(-1deg);
-	}
-	20% {
-		transform: translate(-3px, 0px) rotate(1deg);
-	}
-	30% {
-		transform: translate(3px, 2px) rotate(0deg);
-	}
-	40% {
-		transform: translate(1px, -1px) rotate(1deg);
-	}
-	50% {
-		transform: translate(-1px, 2px) rotate(-1deg);
-	}
-	60% {
-		transform: translate(-3px, 1px) rotate(0deg);
-	}
-	70% {
-		transform: translate(3px, 1px) rotate(-1deg);
-	}
-	80% {
-		transform: translate(-1px, -1px) rotate(1deg);
-	}
-	90% {
-		transform: translate(1px, 2px) rotate(0deg);
-	}
-	100% {
-		transform: translate(1px, -2px) rotate(-1deg);
-	}
-} */
+}
 
 /* #heroimg {
 	width: 100%;
@@ -133,9 +133,10 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	img {
+	img,
+	video {
 		height: 100%;
-		max-height: 300px;
+		max-height: 350px;
 		object-fit: cover;
 		border-radius: 0px 10px 0px 10px;
 	}
@@ -188,21 +189,25 @@ main {
 		scrollbar-width: none;
 	}
 	.kommentar {
-		flex: 0 0 100%; /* Gør hvert kommentar-div mindre, så man ser én ad gangen */
+		flex: 0 0 90%; /* Gør hvert kommentar-div mindre, så man ser én ad gangen */
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-start;
 		scroll-snap-align: center; /* Snapper til midten */
 		background: #f9f9f9; /* Tilføj en baggrund for visuelt at adskille anmeldelserne */
 		border-radius: 10px;
 		padding: 20px;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	}
+
 	.stjerner {
 		display: flex;
 		justify-content: space-around;
 		gap: 10px;
+		margin-bottom: 10px;
+		margin-top: 5px;
 		img {
 			height: 30px;
 		}
@@ -235,10 +240,12 @@ main {
 
 	#prevBtn {
 		left: -60px;
+		display: none;
 	}
 
 	#nextBtn {
 		right: -60px;
+		display: none;
 	}
 }
 
@@ -251,5 +258,73 @@ main {
 	}
 	.anmeldelser {
 		padding: 0px 150px;
+	}
+	#prevBtn {
+		display: block !important;
+	}
+
+	#nextBtn {
+		display: block !important;
+	}
+
+	.kommentar {
+		flex: 0 0 100% !important;
+	}
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 70px;
+
+	.keypointsparent {
+		display: flex;
+		align-items: center;
+		row-gap: 20px;
+		width: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.keypoints {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		img {
+			height: 35px;
+		}
+		h2 {
+			flex: 0;
+			font-size: 1rem;
+		}
+	}
+	.grid_1-1v {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.liste {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	.slistepunkt {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		img {
+			height: 24px;
+			width: 24px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.liste {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			gap: 15px 25px;
+		}
 	}
 }

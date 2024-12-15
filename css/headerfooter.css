@@ -194,8 +194,7 @@ nav {
 		padding: 10px;
 		justify-content: center;
 		align-items: center;
-		gap: 10px;
-		align-self: stretch;
+		align-self: center;
 		border-radius: 20px;
 		background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
 	}
