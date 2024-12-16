@@ -9,6 +9,7 @@ img video {
   height: auto;
   display: block;
 }
+
 /*************** Menu ****************/
 
 /*************** DEKSTOP ****************/
@@ -83,4 +84,10 @@ img video {
     aspect-ratio: 1/1;
     object-fit: cover;
   }
+}
+
+video {
+  width: 100%;
+  margin-top: 70px;
+  object-fit: cover;
 }
