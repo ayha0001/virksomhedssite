@@ -58,7 +58,7 @@ main {
 	position: absolute;
 	overflow-x: clip;
 	width: 100vw;
-	top: 1480px;
+	top: 1380px;
 	right: 0;
 }
 
@@ -83,7 +83,7 @@ main {
 		animation: bil 5s linear infinite;
 	}
 	.bil {
-		top: 1852px;
+		top: 1320px;
 		display: flex !important;
 	}
 	@keyframes bil {
@@ -134,7 +134,7 @@ main {
 		animation: bil 5s linear infinite;
 	}
 	.bil {
-		top: 1510px;
+		top: 1410px;
 		display: flex !important;
 	}
 	@keyframes bil {
