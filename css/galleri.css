@@ -13,6 +13,10 @@ img video {
 /*************** Menu ****************/
 
 /*************** DEKSTOP ****************/
+.galleri_h1 {
+  text-align: center;
+  font-size: 100px;
+}
 @media (min-width: 800px) {
   .grid_galleri {
     display: grid;
