@@ -17,24 +17,54 @@ main {
 	left: 0;
 }
 
+@media (max-width: 800px) {
+	.hero {
+		height: fit-content;
+	}
+}
+
 .hero > * {
 	grid-column: 1;
 	grid-row: 1;
 }
 
+#lottie {
+	width: 100%;
+	height: 100%;
+	max-height: 400px;
+	margin: 70px 0px;
+}
+
+@media (min-width: 1100px) {
+	.bil {
+		display: flex !important;
+	}
+	#lottie {
+		margin-bottom: 70px;
+	}
+}
 #bil {
 	position: absolute;
-	bottom: -100px;
-	right: -300px;
+	bottom: 0px;
+	right: 0px;
 	height: 300px;
 	width: auto;
 	animation: bil linear;
+	animation-duration: 1ms;
 	animation-timeline: scroll(root);
+}
+.bil {
+	display: none;
+	position: absolute;
+	overflow-x: clip;
+	width: 100vw;
+	top: 1380px;
+	right: 0;
 }
 
 @keyframes bil {
 	from {
-		transform: translateX(0); /* Start fra højre */
+		transform: translateX(600px); /* Start fra højre */
 	}
 	to {
 		transform: translateX(-300vw); /* Flyt hele vejen ud til venstre */
@@ -48,17 +78,71 @@ main {
 		margin-right: 10px;
 	}
 }
-
-@media (max-width: 800px) {
+@media (min-width: 327px) and (max-width: 405px) {
 	#bil {
 		animation: bil 5s linear infinite;
+	}
+	.bil {
+		top: 1320px;
+		display: flex !important;
 	}
 	@keyframes bil {
 		0% {
 			right: -600px;
 		}
 		100% {
-			right: 100%;
+			right: 110%;
+		}
+		0% {
+			transform: translate(1px, 1px) rotate(0deg);
+		}
+		10% {
+			transform: translate(-1px, -2px) rotate(-1deg);
+		}
+		20% {
+			transform: translate(-3px, 0px) rotate(1deg);
+		}
+		30% {
+			transform: translate(3px, 2px) rotate(0deg);
+		}
+		40% {
+			transform: translate(1px, -1px) rotate(1deg);
+		}
+		50% {
+			transform: translate(-1px, 2px) rotate(-1deg);
+		}
+		60% {
+			transform: translate(-3px, 1px) rotate(0deg);
+		}
+		70% {
+			transform: translate(3px, 1px) rotate(-1deg);
+		}
+		80% {
+			transform: translate(-1px, -1px) rotate(1deg);
+		}
+		90% {
+			transform: translate(1px, 2px) rotate(0deg);
+		}
+		100% {
+			transform: translate(1px, -2px) rotate(-1deg);
+		}
+	}
+}
+
+@media (min-width: 580px) and (max-width: 1100px) {
+	#bil {
+		animation: bil 5s linear infinite;
+	}
+	.bil {
+		top: 1410px;
+		display: flex !important;
+	}
+	@keyframes bil {
+		0% {
+			right: -600px;
+		}
+		100% {
+			right: 110%;
 		}
 		0% {
 			transform: translate(1px, 1px) rotate(0deg);
@@ -150,6 +234,9 @@ main {
 	.grid_1-1 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+	main {
+		margin-top: 0px !important;
 	}
 }
 
@@ -276,7 +363,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 70px;
+	gap: 100px;
 
 	.keypointsparent {
 		display: flex;
