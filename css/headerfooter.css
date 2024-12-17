@@ -1,320 +1,320 @@
 address {
-	font-style: normal;
+  font-style: normal;
 }
 
 header {
-	display: flex;
-	flex-direction: column;
-	height: 70px;
-	width: 100%;
-	align-items: center;
-	flex: 1 0 0;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 100;
-	background: var(--tertiaryopacity);
-	backdrop-filter: blur(20.5px);
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  flex: 1 0 0;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--tertiaryopacity);
+  backdrop-filter: blur(20.5px);
 }
 .vandret {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	padding: 10px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 .logo {
-	align-items: stretch;
-	height: 100%;
-	max-width: 130px;
+  align-items: stretch;
+  height: 100%;
+  max-width: 130px;
 }
 
 .logo img {
-	align-items: stretch;
-	height: 100%;
-	max-width: 130px;
-	border-radius: 10px;
+  align-items: stretch;
+  height: 100%;
+  max-width: 130px;
+  border-radius: 10px;
 }
 
 .tekst {
-	display: flex;
-	padding: 20px;
-	align-items: center;
-	gap: 10px;
-	width: 100%;
-	flex: 1 1 0;
-	align-self: stretch;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  flex: 1 1 0;
+  align-self: stretch;
 }
 
 nav {
-	height: 100%;
-	color: #fff;
-	font-family: inherit;
-	font-size: clamp(1rem, 1.7vw, 2rem);
-	font-style: normal;
-	font-weight: 700;
+  height: 100%;
+  color: #fff;
+  font-family: inherit;
+  font-size: clamp(1rem, 1.7vw, 2rem);
+  font-style: normal;
+  font-weight: 700;
 }
 
 .navydre {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
 }
 
 .navindre {
-	display: flex;
-	padding-left: 5px;
-	align-items: center;
-	align-self: stretch;
-	height: 100%;
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+  align-self: stretch;
+  height: 100%;
 }
 
 .navknap {
-	display: flex;
-	padding: 10px 15px;
-	align-items: center;
-	align-self: stretch;
-	border-left: 1.25px solid;
-	border-right: 1.25px solid;
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  align-self: stretch;
+  border-left: 1.25px solid;
+  border-right: 1.25px solid;
 }
 
 .navknap:first-child {
-	border-left: 2.5px solid;
+  border-left: 2.5px solid;
 }
 
 .navknap:last-child {
-	border-right: 2.5px solid;
+  border-right: 2.5px solid;
 }
 
 .navknap a,
 .burgerpunkt a {
-	color: var(--primary);
+  color: var(--primary);
 }
 
 .navknap:hover,
 .navcta:hover,
 .burgerpunkt:hover {
-	background: var(--secondary);
-	transition: background 0.3s ease;
+  background: var(--secondary);
+  transition: background 0.3s ease;
 }
 
 .navknap:last-child {
-	border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 20px 20px 0px;
 }
 
 .navcta {
-	display: flex;
-	padding: 10px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	align-self: stretch;
-	border-radius: 15px;
-	background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
 }
 
 .navburger {
-	position: absolute;
-	top: 70px;
-	display: none;
-	background: var(--tertiary);
-	z-index: 1000;
-	align-items: stretch;
-	justify-content: center;
-	flex-direction: column;
-	height: fit-content;
+  position: absolute;
+  top: 70px;
+  display: none;
+  background: var(--tertiary);
+  z-index: 1000;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
 }
 
 .navburger1 {
-	display: none;
+  display: none;
 }
 
 .navburger.active {
-	display: flex;
+  display: flex;
 }
 
 /* Åbent burger-ikon */
 .burger.open span:nth-child(1) {
-	transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .burger.open span:nth-child(2) {
-	opacity: 0;
+  opacity: 0;
 }
 
 .burger.open span:nth-child(3) {
-	transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .burgercta {
-	display: none;
+  display: none;
 }
 
 @media (max-width: 720px) {
-	.navburger1 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: stretch;
-		padding: 10px;
-		border-radius: 0px 0px 10px 10px;
-	}
+  .navburger1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
 
-	.burgerpunkt {
-		padding: 10px;
-	}
-	.navydre {
-		display: none;
-	}
-	.tekst {
-		display: none;
-	}
-	.burgerindre {
-		display: flex;
-		height: 100%;
-		padding: 0px 10px;
-		gap: 30px;
-		justify-content: flex-end;
-		flex: 1 1 0;
-		align-items: center;
-		border-radius: 0px 20px 20px 0px;
-	}
-	.burgerydre {
-		display: flex;
-		gap: 20px;
-		height: 100%;
-		width: 100%;
-		flex-wrap: wrap;
-	}
+  .burgerpunkt {
+    padding: 10px;
+  }
+  .navydre {
+    display: none;
+  }
+  .tekst {
+    display: none;
+  }
+  .burgerindre {
+    display: flex;
+    height: 100%;
+    padding: 0px 10px;
+    gap: 30px;
+    justify-content: flex-end;
+    flex: 1 1 0;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+  }
+  .burgerydre {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
-	.burgercta {
-		display: flex;
-		padding: 10px;
-		justify-content: center;
-		align-items: center;
-		align-self: center;
-		border-radius: 20px;
-		background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
-	}
+  .burgercta {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 20px;
+    background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
+  }
 
-	.burger {
-		display: flex;
-		cursor: pointer;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-evenly;
-		height: 100%;
-	}
-	.burger span {
-		display: block;
-		width: 40px;
-		height: 4px;
-		border-radius: 10px;
-		background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
-	}
-	nav {
-		width: 100%;
-	}
+  .burger {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .burger span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background: linear-gradient(130deg, rgba(255, 157, 88, 1) 0%, rgba(233, 97, 0, 1) 100%);
+  }
+  nav {
+    width: 100%;
+  }
 }
 
 footer {
-	display: flex;
-	padding: 30px 30px;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 20px;
-	position: relative;
+  display: flex;
+  padding: 30px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
 }
 .bestil {
-	display: flex;
-	padding: 0px 10px 70px 10px;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	align-self: stretch;
-	text-align: center;
+  display: flex;
+  padding: 0px 10px 70px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  text-align: center;
 }
 
 .info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
 }
 
 .åbningstider,
 .adresse,
 .kontaktos {
-	display: flex;
-	padding: 20px;
-	flex-direction: column;
-	gap: 10px;
-	align-self: stretch;
-	border-radius: 10px;
-	background: var(--tertiaryopacity);
-	backdrop-filter: blur(7.5px);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--tertiaryopacity);
+  backdrop-filter: blur(7.5px);
 }
 
 .kontaktos {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .åbningstider1 {
-	display: flex;
-	justify-content: space-between;
-	align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
 }
 .some {
-	align-items: flex-end;
-	align-self: flex-start;
-	flex: 1 1 0;
-	display: flex;
-	gap: 10px;
+  align-items: flex-end;
+  align-self: flex-start;
+  flex: 1 1 0;
+  display: flex;
+  gap: 10px;
 }
 
 #linjefooter1 {
-	display: none;
+  display: none;
 }
 #linjefooter2 {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 @media (min-width: 800px) {
-	footer {
-		padding: 50px;
-	}
-	.info {
-		display: grid;
-		max-width: 1000px;
-		margin: auto;
-		grid-template-columns: 1fr 2fr 3fr;
-	}
-	.adresse {
-		grid-column: 1/2;
-		grid-row: 1;
-	}
-	.kontaktos {
-		grid-column: 2/3;
-		grid-row: 1;
-	}
-	.åbningstider {
-		grid-column: 3/4;
-	}
+  footer {
+    padding: 50px;
+  }
+  .info {
+    display: grid;
+    max-width: 1000px;
+    margin: auto;
+    grid-template-columns: 1fr 2fr 3fr;
+  }
+  .adresse {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .kontaktos {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .åbningstider {
+    grid-column: 3/4;
+  }
 
-	#linjefooter1 {
-		display: block;
-		position: absolute;
-		bottom: 87px;
-		right: 0;
-	}
+  #linjefooter1 {
+    display: block;
+    position: absolute;
+    bottom: 87px;
+    right: 0;
+  }
 
-	#linjefooter2 {
-		display: none;
-	}
+  #linjefooter2 {
+    display: none;
+  }
 }
